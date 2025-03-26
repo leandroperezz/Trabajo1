@@ -114,16 +114,3 @@ footer {
 body {
     font-family: 'Poppins', sans-serif;
 }
-
-.modooscuro {
-    background-color: #121212;
-    color: white;
-}
-
-.modooscuro, .dark-mode footer {
-    background-color: #1e1e1e;
-}
-
-.modooscuro button{
-    background-color: #444;
-}

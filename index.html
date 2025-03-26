@@ -1,67 +1,111 @@
 <!DOCTYPE html>
 <html>
-    <head> <!--Head para agregar el titulo de la pestaña.-->
-        <title>Portfolio.</title> 
-    </head>
 
-    <body> 
+<head>
+    <!--Head para agregar el titulo de la pestaña.-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Anthony Stark</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
         <h1>Portfolio profesional.</h1>
-        
-        <p>Nombre: Anthony Stark</p>
-        <p>Puesto: Desarrollador Full Stack.</p>
-        <p>Soy un desarrollador Full Stack con más de 5 años de experiencia en el desarrollo de aplicaciones web y móviles. Me apasiona la tecnología, la arquitectura de software y la creación de soluciones innovadoras que optimicen procesos y mejoren la experiencia del usuario. Trabajo con tecnologías modernas y disfruto aprender constantemente.</p>
-        
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnW1fVIIhxwfr0kkhKloGPgBq-Sfv2ieRBZw&s" alt="Foto de Lucas Andrade, desarrollador full stack.">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnW1fVIIhxwfr0kkhKloGPgBq-Sfv2ieRBZw&s"
+            alt="Foto de Lucas Andrade, desarrollador full stack.">
+    </header>
 
-        <h3>Habilidades y herramientas</h3>
+    <main class="container">
+        <section class="descripcion">
+            <p>Nombre: Anthony Stark</p>
+            <p>Puesto: Desarrollador Full Stack.</p>
+            <p>Soy un desarrollador Full Stack con más de 5 años de experiencia en el desarrollo de aplicaciones web y
+                móviles. Me apasiona la tecnología, la arquitectura de software y la creación de soluciones innovadoras
+                que
+                optimicen procesos y mejoren la experiencia del usuario. Trabajo con tecnologías modernas y disfruto
+                aprender constantemente.</p>
+        </section>
 
-        <ul>
-            <li>Frontend: React.js, Next.js, Vue.js, Tailwind CSS.</li>
-            <li>Backend: Node.js, Express.js, NestJS, Django.</li>
-            <li>Bases de datos: PostgreSQL, MongoDB, Firebase.</li>
-            <li>DevOps: Docker, AWS, GitHub Actions.</li>
-            <li>Otros: REST APIs, GraphQL, WebSockets, Testing (Jest, Cypress).</li>
-        </ul>
+        <section class="habilidades">
+            <h3>Habilidades y herramientas</h3>
+            <ul>
+                <li>Frontend: React.js, Next.js, Vue.js, Tailwind CSS.</li>
+                <li>Backend: Node.js, Express.js, NestJS, Django.</li>
+                <li>Bases de datos: PostgreSQL, MongoDB, Firebase.</li>
+                <li>DevOps: Docker, AWS, GitHub Actions.</li>
+                <li>Otros: REST APIs, GraphQL, WebSockets, Testing (Jest, Cypress).</li>
+            </ul>
+        </section>
 
-        <h3>Experiencia</h3>
-        
-        <h4>Desarrollador full stack - Tech Solutions</h4>
+        <section class="experiencia">
+            <h3>Experiencia</h3>
+            <div class="experienciavisual">
+                <h4>Desarrollador full stack - Tech Solutions</h4>
+                <p>2022 - Actualidad | Remoto.</p>
+                <ul>
+                    <li>Desarrollo de aplicaciones web utilizando React, Node.js y PostgreSQL.</li>
+                    <li>Implementación de APIs REST y GraphQL para conectar front-end y back-end.</li>
+                    <li>Optimización de rendimiento y mejoras en la UI con TailwindCSS.</li>
+                    <li>Integración de servicios en la nube con AWS y Firebase.</li>
+                </ul>
 
-        <p>2022 - Actualidad | Remoto.</p>
+                <h4>Desarrollador front-end - Code Factory</h4>
+                <p>2019 - 2022 | Buenos Aires, Argentina.</p>
+                <ul>
+                    <li>Creación de interfaces dinámicas y responsivas con React y Redux.</li>
+                    <li>Mantenimiento y optimización de código en JavaScript y TypeScript.</li>
+                    <li>Colaboración con equipos de diseño para mejorar la experiencia de usuario (UX/UI).</li>
+                    <li>Integración con APIs de terceros y servicios backend.</li>
+                </ul>
+            </div>
+        </section>
 
-        <ul>
-            <li>Desarrollo de aplicaciones web utilizando React, Node.js y PostgreSQL.</li>
-            <li>Implementación de APIs REST y GraphQL para conectar front-end y back-end.</li>
-            <li>Optimización de rendimiento y mejoras en la UI con TailwindCSS.</li>
-            <li>Integración de servicios en la nube con AWS y Firebase.</li>
-        </ul>
+        <section class="proyectos">
+            <h3>Proyectos destacados</h3>
 
-        <h4>Desattollador front-end - Code Factory</h4>
-        <p>2019 - 2022 | Buenos Aires, Argentina.</p>
+            <h4>DevTask - Gestor de Tareas para Equipos</h4>
+            <p>Desarrollé una aplicación web para la gestión de tareas colaborativas, con funcionalidades como tableros
+                Kanban, asignación de tareas y notificaciones en tiempo real.</p>
+            <ul>- Tecnologías: React, Node.js, Firebase, TailwindCSS.</ul>
 
-        <ul>
-            <li>Creación de interfaces dinámicas y responsivas con React y Redux.</li>
-            <li>Mantenimiento y optimización de código en JavaScript y TypeScript.</li>
-            <li>Colaboración con equipos de diseño para mejorar la experiencia de usuario (UX/UI).</li>
-            <li>Integración con APIs de terceros y servicios backend.</li>
-        </ul>
+            <h4>ShopEasy - E-commerce Personalizable</h4>
+            <p>Creé una plataforma de e-commerce con autenticación de usuarios, integración con pasarelas de pago y
+                panel de
+                administración.</p>
+            <ul>- Tecnologías: Next.js, Strapi, PostgreSQL, Stripe</ul>
+        </section>
 
-        <h3>Proyectos destacados</h3>
+        <section class="contacto">
+            <h3>Contacto</h3>
+            <form action="#" method="POST">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
 
-        <h4>DevTask - Gestor de Tareas para Equipos</h4>
-        <p>Desarrollé una aplicación web para la gestión de tareas colaborativas, con funcionalidades como tableros Kanban, asignación de tareas y notificaciones en tiempo real.</p>
-        <ul>- Tecnologías: React, Node.js, Firebase, TailwindCSS.</ul>
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
 
-        <h4>ShopEasy - E-commerce Personalizable</h4>
-        <p>Creé una plataforma de e-commerce con autenticación de usuarios, integración con pasarelas de pago y panel de administración.</p>
-        <ul>- Tecnologías: Next.js, Strapi, PostgreSQL, Stripe</ul>
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="2" required></textarea>
 
-        <h3>Redes sociales</h3>
-        <ul>
-            <li><p><a href="https://www.linkedin.com/in/tony-stark-2867a227a/" target="_blank">Linkedin</a></p></li>
-            <li><p><a href="https://github.com/tony-stark-17" target="_blank">GitHub</a></p></li>
-            <li><p><a href="https://lucasandrade.dev/" target="_blank">Portfolio</a></p></li>
-        </ul>
-        
-    </body>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <h3>Redes sociales</h3>
+    <ul>
+        <li>
+            <p><a href="https://www.linkedin.com/in/tony-stark-2867a227a/" target="_blank">Linkedin</a></p>
+        </li>
+        <li>
+            <p><a href="https://github.com/tony-stark-17" target="_blank">GitHub</a></p>
+        </li>
+        <li>
+            <p><a href="https://lucasandrade.dev/" target="_blank">Portfolio</a></p>
+        </li>
+    </ul>
+
+</body>
+
 </html>

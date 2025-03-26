@@ -115,15 +115,15 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-.dark-mode {
+.modooscuro {
     background-color: #121212;
     color: white;
 }
 
-.dark-mode header, .dark-mode footer {
+.modooscuro, .dark-mode footer {
     background-color: #1e1e1e;
 }
 
-.dark-mode button {
+.modooscuro button{
     background-color: #444;
 }
